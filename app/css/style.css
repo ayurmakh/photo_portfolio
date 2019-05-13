@@ -7,8 +7,14 @@
   src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'roboto-slab-bold';
-  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.ttf") format("truetype"); }
+  font-family: 'roboto-slab';
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'roboto-slab';
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300; }
 
 @font-face {
   font-family: 'montserrat';
@@ -61,7 +67,7 @@ a {
 
 .main__logo {
   font-size: 30px;
-  font-family: righteous;
+  font-family: righteous, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px; }
   .main__logo a {
@@ -108,19 +114,21 @@ a {
 
 .home__title {
   font-size: 105px;
-  font-family: montserrat;
+  font-family: montserrat, sans-serif;
   font-weight: 800;
   margin-top: 113px;
   position: relative; }
 
+.line {
+  height: 5px;
+  width: 107.5px; }
+
 .home__line {
   background-color: #fff;
-  height: 5px;
-  width: 107.5px;
   margin-top: 40px; }
 
 .home__descr {
-  font-family: roboto-slab;
+  font-family: roboto-slab, sans-serif;
   font-size: 18px;
   margin-top: 48px;
   letter-spacing: 2px; }
@@ -153,6 +161,12 @@ a {
   .button__read__more:hover {
     background-color: white;
     color: #ff811c; }
+
+.about__descr {
+  font-family: roboto-slab, sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  width: 1100px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
