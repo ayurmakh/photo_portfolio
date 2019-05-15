@@ -397,7 +397,18 @@ a {
   background-position: center; }
 
 .gallery {
-  padding-top: 150px; }
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px; }
+  .gallery .button__read__more {
+    border: 4px solid #1b1613;
+    color: #1b1613;
+    transition: background-color .3s ease, color .3s ease; }
+    .gallery .button__read__more:hover {
+      background-color: #1b1613;
+      color: #ff811c; }
 
 .gallery__header {
   text-align: center;
@@ -421,7 +432,8 @@ a {
   grid-template-columns: repeat(3, 1fr); }
 
 .gallery__wrapper2 {
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px; }
 
 .snap {
   height: 550px;
@@ -482,6 +494,101 @@ a {
     left: -18px;
     top: 18px;
     border-radius: 2px; }
+
+.section__contacts {
+  padding-top: 100px;
+  background-color: #1b1613;
+  color: #fff;
+  display: flex;
+  justify-content: center; }
+
+.contacts__wrapper {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between; }
+
+.contacts__form__wrapper {
+  width: 470px; }
+
+.contacts__small__header {
+  font-family: roboto-slab;
+  font-size: 38px;
+  font-weight: 300;
+  width: 380px;
+  line-height: 1.2; }
+
+.contacts__line {
+  background-color: #fff;
+  margin-top: 40px;
+  width: 23.5%;
+  height: 5px; }
+
+.contacts__big__header {
+  margin-top: 80px;
+  font-family: montserrat;
+  font-size: 47px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.contacts__form {
+  margin-top: 90px; }
+
+.form__input {
+  height: 55px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4a4a44;
+  font-family: 'roboto-slab';
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+  color: #fff;
+  outline: none; }
+  .form__input::-webkit-input-placeholder {
+    color: #fff; }
+  .form__input::-moz-placeholder {
+    color: #fff; }
+
+.form__textarea {
+  height: auto; }
+
+.form__button {
+  margin-top: 20px; }
+
+.map__wrapper {
+  width: 600px; }
+
+#map {
+  width: 100%;
+  height: 600px; }
+
+.social__networks {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; }
+
+.social__networks__element {
+  margin-bottom: 15px;
+  color: #ff811c;
+  font-family: roboto-slab;
+  font-size: 28px;
+  font-weight: 400;
+  transition: color .3s ease; }
+  .social__networks__element:hover {
+    color: #fff; }
+
+.main__footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1b1613;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+  padding-top: 70px;
+  padding-bottom: 50px; }
+
+.footer__text {
+  width: 1170px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
