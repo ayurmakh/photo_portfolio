@@ -54,6 +54,39 @@ a {
   a:hover {
     text-decoration: none; }
 
+.scrollup__button__wrapper {
+  background-color: #ff811c;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: #ff811c;
+  position: fixed;
+  font-size: 22px;
+  left: 95%;
+  top: 90%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease, top .3s ease; }
+  .scrollup__button__wrapper:hover {
+    background-color: #e86700;
+    color: #e86700; }
+
+.hidden {
+  opacity: 0;
+  top: 100%; }
+
+.scrollup__button {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .main__header {
   position: absolute;
   top: 0;
