@@ -75,8 +75,8 @@ a {
     color: #e86700; }
 
 .hidden {
-  opacity: 0;
-  top: 100%; }
+  top: 100%;
+  transition: top .3s ease; }
 
 .scrollup__button {
   background-color: #fff;
@@ -115,7 +115,7 @@ a {
     color: #fff; }
 
 .main__nav__element {
-  margin-left: 60px;
+  margin-left: 30px;
   transition: color .3s ease;
   position: relative; }
   .main__nav__element:hover {
@@ -131,6 +131,8 @@ a {
     width: 100%;
     opacity: 0;
     transition: opacity .3s ease; }
+  .main__nav__element:nth-child(1) {
+    margin-left: 0; }
 
 .main__nav__element__active:before {
   opacity: 1; }
@@ -626,15 +628,36 @@ a {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .main__logo {
+    font-size: 26px; }
+  .main__nav {
+    font-size: 14px; }
+  .main__nav__element {
+    margin-left: 25px; }
+  .home__title {
+    font-size: 85px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  .main__logo {
+    font-size: 23px; }
+  .main__nav {
+    font-size: 13px; }
+  .main__nav__element {
+    margin-left: 10px; }
+  .home__title {
+    font-size: 65px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .main__logo {
+    font-size: 22px; }
+  .main__nav {
+    font-size: 12px; }
+  .main__nav__element {
+    margin-left: 10px; }
+  .home__title {
+    font-size: 55px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
