@@ -4,6 +4,7 @@ $('.main__nav__element').on('click', function() {
 	$(this).addClass('main__nav__element__active');
 });
 
+<<<<<<< HEAD
 
 
 var target = $('.section__about');
@@ -17,3 +18,14 @@ $(window).scroll(function() {
     	$('.scrollup__button__wrapper').removeClass('hidden');
   	}
 });
+=======
+var map;
+
+function initMap() {
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 51.811234, lng: 107.598114},
+		zoom: 17
+	});
+}
+    
+>>>>>>> f7fea8dae9efb7722db96f22ed5e48bf789dfbac
