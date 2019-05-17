@@ -34,14 +34,38 @@
 	.main__logo
 		font-size: 22px
 
-	.main__nav
-		font-size: 12px
-
-	.main__nav__element
-		margin-left: 10px
-
 	.home__title
 		font-size: 55px	
+
+	.main__nav
+		display: none
+		width: 100%
+
+	.main__nav__element
+		display: block
+		font-size: 16px
+		margin: 0
+		margin-top: 10px
+		&:before
+			display: none
+
+	.toggle__button
+		display: block
+		cursor: pointer
+		color: #fff
+		text-transform: uppercase
+		transition: color .3s ease
+		&:after
+			content: attr(data-open)
+		&:hover
+			color: $accent
+
+
+	#menu__checkbox:checked + nav .main__nav
+		display: block
+
+	#menu__checkbox:checked + nav .toggle__button:after
+		content: attr(data-close)
 
 
 
